@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    h1 {
+      color: crimson;
+      font-family: "Courier New", Courier, monospace;
+      font-size: large;
+    }
+    p {
+      color: blue;
+      font-family: "Times New Roman", Times, serif;
+      font-size: medium;
+    }
+
+    input {
+      border: 3px solid #ac5959;
+    }
+  </style>
+  <p>
+    Please fill out the form below with the required information to complete
+    your registration.
+  </p>
+  <h1>IYF REGISTRATION</h1>
+  <p>COMPUTER PROGRAMMING CLASS</p>
+  <form method="post" action="https://example.com/submit-registration">
+    <fieldset>
+      <label for="profile-picture">Profile Picture:</label>
+      <input
+        type="file"
+        id="profile-picture"
+        name="profilePicture"
+        accept="image/*"
+        required
+      />
+      <br />
+    </fieldset>
+
+    <fieldset>
+      <label for="Fname">First Name</label><br />
+      <input type="text" name="fname" id="fname" required /><br />
+      <label for="Lname">Last Name</label><br required />
+      <input type="text" name="Lname" id="Lname" /><br />
+      <label for="New Password"> New Password</label><br />
+      <input
+        type="Password"
+        name=" New Password"
+        id=" New Password"
+        pattern="@7ad CD -bg"
+      /><br />
+      <label for="Mnumber">Mobile Number</label><br />
+      <input type="number" name="Mnumber" id="Mnumber" /><br />
+      <label for="Mail">Email</label><br />
+      <input type="text" name="Mail" id="Mail" /><br />
+      <label for="Res">Residence</label><br />
+      <input type="text" name="Res" id="Res" /><br />
+      <label for="Age">Age</label><br />
+      <input
+        type="Number"
+        name="Number"
+        id="Number"
+        min="1"
+        max="35"
+        step="1"
+      /><br />
+    </fieldset>
+    <fieldset>
+      Gender:
+      <label>
+        Male:
+        <input type="radio" name="Gender" />
+      </label>
+      <label>
+        Female:
+        <input type="radio" name="Gender" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="Social Media"></label>
+      Which social Media do you prefer Using?
+      <select id="Social Media" name="social Media">
+        <option value="1">Whatsapp</option>
+        <option value="2">Facebook</option>
+        <option value="3">Tiktok</option>
+        <option value="4">Snapchat</option>
+        <option value="5">Twitter</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="Courses"></label>
+      which course do you prefer to do in our institution?
+      <select name="Courses" id="Courses">
+        <option value="1">Computer Programming</option>
+        <option value="2">Graphic Design</option>
+        <option value="3">Software Development</option>
+        <option value="4">Mobile Development</option>
+        <option value="5">Web Development</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="Languages"></label>
+      Which programming language do prefer using throughout the course?
+      <select name="Courses" id="Courses">
+        <option value="1">Python</option>
+        <option value="2">C</option>
+        <option value="3">C++</option>
+        <option value="4">Django</option>
+        <option value="5">HTML</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Bio:</label>
+      <textarea
+        id="bio"
+        name="bio"
+        rows="4"
+        cols="50"
+        maxlength="500"
+      ></textarea>
+      <br />
+    </fieldset>
+    <fieldset>
+      <label>
+        <input type="checkbox" name="acceptTerms" required />
+        I have read and agree to the
+        <a href="your_terms_and_conditions_page.html" target="_blank"
+          >Terms and Conditions</a
+        >.
+      </label>
+    </fieldset>
+    <fieldset>
+      <button type="Reset">Reset</button>
+      <button type="submit">submit</button>
+    </fieldset>
+  </form>
+  <body></body>
+</html>
